@@ -1,0 +1,128 @@
+{% include "header.html" %}
+
+  <section class="introduction-section">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="coding-img" src="static/images/coding-icon.png" alt="coding img">
+      </div>
+      <div class="col-lg-6">
+        <div class="introduction">
+          <h1>Hello!</h1>
+          <h3>I'm Rui Jia, a Computer Science student at <a href="https://www.nus.edu.sg/">NUS</a>.</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="skills-section">
+      <h2 class="skills-text">Skills 🤹‍♂️</h2>
+      <h5 class="skills-text">Here are some of the skills I picked up over the past few years.</h5>
+    </section>
+
+    <hr>
+
+    <div class="programming-text">
+      <img src="static/images/programming-icon.png" alt="programming icon">
+      <h4>Programming Courses</h4>
+    </div>
+
+    <div class="row course-row">
+      <div class="course-column col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>CS50</h3>
+          </div>
+          <div class="card-body">
+            <p>C</p>
+            <p>SQLite</p>
+            <p>Data Structures</p>
+            <p>Memory Management</p>
+            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0'" type="button">Course Site</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-column col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>App Development</h3>
+          </div>
+          <div class="card-body">
+            <p>Java</p>
+            <p>XML</p>
+            <p>Android App Development</p>
+            <p>Object Oriented Programming</p>
+            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://www.youtube.com/watch?v=fis26HvvDII'" type="button">Course Site</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-column col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>100 Days of Code</h3>
+          </div>
+          <div class="card-body">
+            <p>Python</p>
+            <p>Web Development and Web Scraping</p>
+            <p>Data Science</p>
+            <p>Flask, Tkinter, Pandas, APIs</p>
+            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://www.udemy.com/course/100-days-of-code/'" type="button">Course Site</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="programming-text">
+      <img src="static/images/design.png" alt="design icon">
+      <h4>Design</h4>
+      <h5>Here are the tools I use for making videos and thumbnails:</h5>
+    </div>
+
+    <div class="row design-row">
+      <div class="col-lg-4 design-element">
+        <img class="design-images" src="static/images/photoshop-icon.png" alt="photoshop img">
+        <h5>Adobe Photoshop</h5>
+      </div>
+      <div class="col-lg-4 design-element">
+        <img class="design-images" src="static/images/premiere-pro.png" alt="premiere pro img">
+        <h5>Adobe Premiere Pro</h5>
+      </div>
+      <div class="col-lg-4 design-element">
+        <img class="design-images" src="static/images/canva.png" alt="canva img">
+        <h5>Canva</h5>
+      </div>
+    </div>
+
+  </section>
+
+  <div id="video-carousel" class="carousel slide" data-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active container-fluid">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/PBVZb9Povzw" autoplay="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item container-fluid">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/7W2h2_5H0UM" autoplay="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item container-fluid">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/AS-V0oijNHM" autoplay="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#video-carousel" role="button" data-slide="prev">
+      <img src="static/images/prev.png" alt="next">
+    </a>
+    <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
+      <img src="static/images/next.png" alt="next">
+    </a>
+  </div>
+
+  <hr>
+
+{% include "footer.html" %}

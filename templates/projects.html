@@ -1,0 +1,38 @@
+{% include "header.html" %}
+
+  <section class="title-section">
+  <h1>🛠️ Projects</h1>
+  <hr>
+
+  {% for project in projects %}
+    <div class="row project-row">
+    <div class="col-lg-3">
+      <img class="project-img" src="{{ project.img_url }}" alt="project img">
+    </div>
+    <div class="col-lg-9">
+      <a class="project-link" href="{{ project.github_url }}">
+        <h4 class="project-title">{{ project.title }}</h4>
+        <h5 class="project-subtitle">{{ project.subtitle }}</h5>
+        <div class="project-btn-container">
+          <form class="project-btn" action="{{ url_for('edit', project_id=project.id) }}" method="get">
+          <input class="btn btn-outline-primary" type="submit" value="Edit"/>
+        </form>
+        <form class="project-btn" action="{{ url_for('delete', project_id=project.id) }}" method="get">
+          <input class="btn btn-outline-primary" type="submit" value="Delete"/>
+        </form>
+        </div>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="add-project-btn">
+    <form action="{{ url_for('add') }}" method="get">
+      <input class="btn btn-lg btn-block btn-outline-primary" type="submit" value="Add Project"/>
+    </form>
+  </div>
+
+  <hr>
+  </section>
+
+{% include "footer.html" %}

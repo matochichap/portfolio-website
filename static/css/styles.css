@@ -1,0 +1,275 @@
+/* Colours
+#F9F7F7
+#DBE2EF
+#3F72AF
+#112D4E */
+
+/* Index.html page */
+
+body {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F9F7F7;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 5rem;
+  color: #112D4E;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 4rem;
+  color: #112D4E;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 3rem;
+  color: #112D4E;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #112D4E;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #112D4E;
+}
+
+hr {
+  margin: 3rem 10rem;
+  border: 1px solid #112D4E;
+}
+
+.dotted-hr {
+  border-style: dotted none none;
+  border-width: 7px;
+  width: 4%;
+  margin: 2rem auto 1rem;
+}
+
+/* Navbar */
+#mainNav {
+  background-color: #DBE2EF;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav-item {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.html-icon {
+  width: 60px;
+  height: auto;
+  padding: 0 10px;
+}
+
+/* Introduction section */
+
+.introduction-section {
+  margin: 7rem 0 3rem;
+  padding: 3rem 7rem;
+}
+
+.introduction {
+  padding: 6rem 0;
+  text-align: left;
+}
+
+.introduction a:hover {
+  text-decoration: none;
+}
+
+/* Skills section */
+
+.skills-section {
+  margin: 3rem 0 3rem;
+  padding: 3rem 7rem;
+}
+
+.skills-text {
+  padding: 2rem;
+}
+
+/* Programming courses */
+
+.programming-text h4 {
+  margin: 0 0 0 1rem;
+  display: inline-block;
+}
+
+.programming-text h5 {
+  margin-top: 2rem;
+}
+
+.programming-text img {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+.course-row {
+  margin: 0 2rem;
+}
+
+.course-column {
+  margin-top: 2rem;
+  font-weight: 500;
+  color: #3F72AF;
+}
+
+.course-column h3 {
+  font-style: "Ubuntu";
+  color: #3F72AF;
+  font-size: 1.75rem;
+}
+
+.course-column p {
+  font-style: "Ubuntu";
+  font-size: 1.25rem;
+}
+
+/* Design */
+.design-row {
+  margin: 0 3rem;
+}
+
+.design-images {
+  width: 80px;
+  margin: 1rem;
+}
+
+.design-element {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+#video-carousel .carousel-control-next img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+#video-carousel .carousel-control-prev img {
+  width: 100px;
+  height: auto;
+  margin-left: 20px;
+}
+
+/* Footer */
+footer .container {
+  padding: 2rem 0;
+}
+
+footer h5 {
+  padding-bottom: 1rem;
+}
+
+/* title section for each sub page */
+.title-section {
+  margin: 10rem 2rem 4rem;
+}
+
+.title-section h1 {
+  margin-bottom: 5rem;
+}
+
+/* about.html page */
+
+.about-row {
+  text-align: left;
+  padding: 1% 5%;
+}
+
+.about-row div h3 {
+  margin-top: 2.5rem;
+}
+
+.about-text h2 {
+  padding: 2% 10%;
+}
+
+.about-text h5 {
+  padding: 1% 10%;
+}
+
+.interests {
+  padding: 0 3%;
+}
+
+.interests-li li{
+  color: #3F72AF;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+/* projects.html page*/
+.project-row {
+  padding: 1% 12%;
+  margin: 2%;
+}
+
+.project-row div{
+  padding: 2% 1%;
+}
+
+.project-img {
+  width: 175px;
+  height: auto;
+}
+
+.project-title, .project-subtitle {
+  text-align: left;
+}
+
+.project-title {
+  font-weight: 500;
+  color: #3F72AF;
+}
+
+.project-link:hover {
+  text-decoration: none;
+}
+
+.project-btn-container {
+  text-align: left;
+}
+
+.project-btn {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.add-project-btn {
+  padding: 0 35%;
+}
+
+/*add_projects.html*/
+
+.form {
+  text-align: left;
+  padding: 0 15%;
+}
+
+.help-block {
+  color: red;
+}
+
+.flash-message {
+  color: red;
+  font-size: 1.5rem;
+}
