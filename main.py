@@ -3,6 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, URL
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy import desc
 from datetime import datetime
 from flask_bootstrap import Bootstrap
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -44,7 +45,7 @@ class Projects(db.Model):
     github_url = db.Column(db.String(1000), nullable=False)
 
 
-# db.create_all()
+db.create_all()
 
 
 @app.route('/')
@@ -54,7 +55,7 @@ def home():
 
 @app.route('/projects')
 def projects():
-    all_projects = Projects.query.all()
+    all_projects = Projects.query.order_by(Projects.id.desc()).all()
     return render_template("projects.html", year=year, projects=all_projects)
 
 
