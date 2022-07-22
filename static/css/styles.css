@@ -169,6 +169,11 @@ hr {
   margin-left: 20px;
 }
 
+.video-iframe {
+  width: 70%;
+  height 39.375%;
+}
+
 /* Footer */
 footer .container {
   padding: 2rem 0;
