@@ -6,14 +6,15 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from flask_bootstrap import Bootstrap
 from werkzeug.security import generate_password_hash, check_password_hash
+import os
 
-hashed_password = "pbkdf2:sha256:260000$rdaR8Iye$36fbcbefb422d72ef855a275138c8a1a8a883eae0a001cb8cc4147e31296da3a"
 year = datetime.now().year
+hashed_password = os.environ.get("PASSWORD")
 
 app = Flask(__name__)
 Bootstrap(app)
 
-app.config['SECRET_KEY'] = 'secret'
+app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///projects.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
