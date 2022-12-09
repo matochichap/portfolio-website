@@ -19,70 +19,106 @@
 
   <section class="skills-section">
       <h2 class="skills-text">Skills 🤹‍♂️</h2>
-      <h5 class="skills-text">Here are some of the skills I picked up over the past few years.</h5>
     </section>
 
-    <hr>
+    <hr class="dotted-hr">
+
+    <div class="row course-row">
+      <div class="course-column col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="card-body">
+            <p>C</p>
+            <p>Java</p>
+            <p>Python</p>
+            <p>Javascript</p>
+            <p>(HTML and CSS)</p>
+<!--            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0'" type="button">Course Site</button>-->
+          </div>
+        </div>
+      </div>
+
+      <div class="course-column col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Libraries and Frameworks</h3>
+          </div>
+          <div class="card-body">
+            <p>React</p>
+            <p>Flask</p>
+            <p>Selenium</p>
+            <p>Pandas</p>
+            <p>Beautiful Soup</p>
+<!--            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://www.youtube.com/watch?v=fis26HvvDII'" type="button">Course Site</button>-->
+          </div>
+        </div>
+      </div>
+
+      <div class="course-column col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Learning</h3>
+          </div>
+          <div class="card-body">
+            <p>Web Development</p>
+            <p>Web Scraping</p>
+            <p>API Development</p>
+            <p>Object Oriented Programming</p>
+            <p>Data Structures and Algorithms</p>
+<!--            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://www.udemy.com/course/100-days-of-code/'" type="button">Course Site</button>-->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="dotted-hr">
 
     <div class="programming-text">
       <img src="static/images/programming-icon.png" alt="programming icon">
       <h4>Programming Courses</h4>
     </div>
 
-    <div class="row course-row">
-      <div class="course-column col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <h3>CS50</h3>
-          </div>
-          <div class="card-body">
-            <p>C</p>
-            <p>SQLite</p>
-            <p>Data Structures</p>
-            <p>Memory Management</p>
-            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0'" type="button">Course Site</button>
-          </div>
+    <p class="skills-desc">Programming courses that I have taken.</p>
+
+    <div id="courses-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid">
+          <a href="https://www.udemy.com/course/100-days-of-code/">
+            <img width="40%" height="22.5%" src="static/images/100-days-of-code.jpg" alt="100 days of code pic">
+          </a>
+          <p><i>100 Days of Code by The App Brewery</i></p>
+        </div>
+        <div  class="carousel-item container-fluid">
+          <a href="https://www.youtube.com/watch?v=fis26HvvDII">
+            <img width="40%" height="22.5%" src="static/images/android-app-development.jpg" alt="android pic">
+          </a>
+          <p><i>Android App Development by freecodecamp</i></p>
+        </div>
+        <div class="carousel-item container-fluid">
+          <a href="https://pll.harvard.edu/course/cs50-introduction-computer-science?delta=0">
+            <img width="40%" height="22.5%" src="static/images/cs50.jpg" alt="cs50 pic">
+          </a>
+          <p><i>CS50 by Havard University</i></p>
         </div>
       </div>
 
-      <div class="course-column col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <h3>App Development</h3>
-          </div>
-          <div class="card-body">
-            <p>Java</p>
-            <p>XML</p>
-            <p>Android App Development</p>
-            <p>Object Oriented Programming</p>
-            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://www.youtube.com/watch?v=fis26HvvDII'" type="button">Course Site</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="course-column col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-header">
-            <h3>100 Days of Code</h3>
-          </div>
-          <div class="card-body">
-            <p>Python</p>
-            <p>Web Development and Web Scraping</p>
-            <p>Data Science</p>
-            <p>Flask, Tkinter, Pandas, APIs</p>
-            <button class="btn btn-lg btn-block btn-outline-primary" onclick="location.href='https://www.udemy.com/course/100-days-of-code/'" type="button">Course Site</button>
-          </div>
-        </div>
-      </div>
-
+      <a class="carousel-control-prev" href="#courses-carousel" role="button" data-slide="prev">
+        <img src="static/images/prev.png" alt="next">
+      </a>
+      <a class="carousel-control-next" href="#courses-carousel" role="button" data-slide="next">
+        <img src="static/images/next.png" alt="next">
+      </a>
     </div>
 
-    <hr>
+    <hr class="dotted-hr">
 
     <div class="programming-text">
       <img src="static/images/design.png" alt="design icon">
-      <h4>Design</h4>
-      <h5>Here are the tools I use for making videos and thumbnails:</h5>
+      <h4>Design tools</h4>
+      <p class="skills-desc">Design tools that I have used.</p>
     </div>
 
     <div class="row design-row">
@@ -101,27 +137,6 @@
     </div>
 
   </section>
-
-  <div id="video-carousel" class="carousel slide" data-ride="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active container-fluid">
-        <iframe class="video-iframe" width="1120" height="630" src="https://www.youtube.com/embed/PBVZb9Povzw" autoplay="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div  class="carousel-item container-fluid">
-        <iframe class="video-iframe" width="1120" height="630" src="https://www.youtube.com/embed/7W2h2_5H0UM" autoplay="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="carousel-item container-fluid">
-        <iframe class="video-iframe" width="1120" height="630" src="https://www.youtube.com/embed/AS-V0oijNHM" autoplay="1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#video-carousel" role="button" data-slide="prev">
-      <img src="static/images/prev.png" alt="next">
-    </a>
-    <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
-      <img src="static/images/next.png" alt="next">
-    </a>
-  </div>
 
   <hr>
 

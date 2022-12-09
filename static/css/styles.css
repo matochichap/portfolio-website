@@ -14,44 +14,51 @@ body {
 
 h1 {
   font-weight: 600;
-  font-size: 5rem;
+  font-size: 500%;
   color: #112D4E;
 }
 
 h2 {
   font-weight: 500;
-  font-size: 4rem;
+  font-size: 400%;
   color: #112D4E;
 }
 
 h3 {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 300%;
   color: #112D4E;
 }
 
 h4 {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 200%;
   color: #112D4E;
 }
 
 h5 {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 150%;
+  color: #112D4E;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 120%;
+  font-weight: 500;
   color: #112D4E;
 }
 
 hr {
-  margin: 3rem 10rem;
+  margin: 3rem 15rem;
   border: 1px solid #112D4E;
 }
 
 .dotted-hr {
   border-style: dotted none none;
   border-width: 7px;
-  width: 4%;
-  margin: 2rem auto 1rem;
+  width: 3.5%;
+  margin: 2rem auto 2rem;
 }
 
 /* Navbar */
@@ -101,7 +108,11 @@ hr {
 }
 
 .skills-text {
-  padding: 2rem;
+  padding: 0rem;
+}
+
+.skills-desc {
+  font-size: 130%;
 }
 
 /* Programming courses */
@@ -157,21 +168,21 @@ hr {
   padding: 1rem;
 }
 
-#video-carousel .carousel-control-next img {
+/* Carousel */
+#courses-carousel {
+  padding: 1rem 0;
+}
+
+#courses-carousel .carousel-control-next img {
   width: 100px;
   height: auto;
   margin-right: 20px;
 }
 
-#video-carousel .carousel-control-prev img {
+#courses-carousel .carousel-control-prev img {
   width: 100px;
   height: auto;
   margin-left: 20px;
-}
-
-.video-iframe {
-  width: 70%;
-  height 39.375%;
 }
 
 /* Footer */
@@ -194,32 +205,30 @@ footer h5 {
 
 /* about.html page */
 
-.about-row {
-  text-align: left;
-  padding: 1% 5%;
-}
-
-.about-row div h3 {
-  margin-top: 2.5rem;
-}
-
-.about-text h2 {
-  padding: 2% 10%;
-}
-
-.about-text h5 {
-  padding: 1% 10%;
-}
-
-.interests {
-  padding: 0 3%;
-}
-
-.interests-li li{
-  color: #3F72AF;
-  font-size: 1.25rem;
+.contact-btn {
+  display: block;
+  margin: 10% 0;
+  text-align: center;
   font-weight: 500;
-  padding: 0.5rem 0;
+}
+
+.about-row {
+  padding: 1% 5%;
+  text-align: left;
+}
+
+.about-text {
+  padding: 2% 10%;
+  text-align: left;
+  font-size: 150%;
+}
+
+.about-text li {
+  margin: 5% 0;
+}
+
+.about-col {
+  padding: 2% 7%;
 }
 
 /* projects.html page*/
